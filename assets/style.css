@@ -1,0 +1,208 @@
+:root {
+  --primary: #2c5e7e;
+  --secondary: #4f8d45;
+  --accent: #e67e22;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+      no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 10px 5px;
+}
+
+.btn:hover {
+  background: #d35400;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--primary);
+}
+
+.hike-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .hike-card {
+    flex-direction: row;
+  }
+}
+
+.hike-image {
+  flex: 1;
+  min-height: 300px;
+  background: url("https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+    no-repeat center center/cover;
+}
+
+.hike-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.hike-title {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hike-subtitle {
+  color: var(--secondary);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.hike-details {
+  margin: 20px 0;
+}
+
+.detail-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.detail-icon {
+  margin-right: 15px;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 20px 0;
+}
+
+.discount {
+  background: #f8f4e5;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+  border-left: 4px solid var(--accent);
+}
+
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+
+.about {
+  background: white;
+}
+
+.testimonials {
+  background: var(--light);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.testimonial {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-weight: 700;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.copyright {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
